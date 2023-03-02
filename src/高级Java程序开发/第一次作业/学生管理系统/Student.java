@@ -6,7 +6,7 @@ public class Student {
     private String gender;   //学生的性别
     private String hometown; //学生的籍贯
 
-    public Student(String id, String name, String gender, String hometown) {
+    public Student(String id, String name, String gender, String hometown) {    //Student对象的构造方法，要求包含学生的学号，姓名，性别，籍贯
         this.id = id;
         this.name = name;
         this.gender = gender;

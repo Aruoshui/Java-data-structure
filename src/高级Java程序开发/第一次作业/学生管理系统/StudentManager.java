@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class StudentManager {
     ArrayList<Student> students = new ArrayList<Student>();  //创建学生列表，存储学生对象
-    Scanner scanner = new Scanner(System.in);  //输入
+    Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         StudentManager manager = new StudentManager();
@@ -25,7 +25,7 @@ public class StudentManager {
             System.out.println("5. 显示所有学生");
             System.out.println("0. 退出");
             System.out.print("请选择操作：");
-            int choice = scanner.nextInt();
+            int choice = scanner.nextInt();  //输入操作
             switch (choice) {
                 case 1:
                     addStudent();
@@ -84,7 +84,7 @@ public class StudentManager {
         System.out.print("请输入要修改的学生的学号：");
         String id = scanner.next();
         int index = findStudentIndex(id);
-        if (index == -1) {
+        if (index == -1) {   //未找到返回-1
             System.out.println("未找到该学生！");
         } else {
             Student student = students.get(index);
@@ -128,7 +128,7 @@ public class StudentManager {
         }
     }
 
-    private int findStudentIndex(String id) {
+    private int findStudentIndex(String id) {     //通过学生的id查找学生
         for (int i = 0; i < students.size(); i++) {
             Student student = students.get(i);
             if (student.getId().equals(id)) {
