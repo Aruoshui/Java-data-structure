@@ -49,7 +49,5 @@ public class Main {
         } catch (IOException | ClassNotFoundException e) { // 处理 IO 异常和类未找到异常
             e.printStackTrace();
         }
-
-
     }
 }
