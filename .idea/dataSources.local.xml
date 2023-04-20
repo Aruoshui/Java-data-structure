@@ -16,6 +16,7 @@
               <node kind="schema" qname="@" />
             </node>
             <node kind="database">
+              <name qname="JDBCTest" />
               <name qname="master" />
               <name qname="MyDataBase" />
               <node kind="schema" qname="dbo" />

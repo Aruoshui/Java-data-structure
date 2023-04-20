@@ -6,9 +6,9 @@ import javax.swing.*;
 public class UserRegistrationAndLogin {
     public static void main(String[] args) {
         // Replace with your database connection string and credentials
-        String connectionString = "jdbc:sqlserver://localhost:1433;databaseName=yourDatabase";
-        String username = "yourUsername";
-        String password = "yourPassword";
+        String connectionString = "jdbc:sqlserver://localhost:1433;databaseName=Test";
+        String username = "zh";
+        String password = "1234567890";
 
         try (Connection conn = DriverManager.getConnection(connectionString, username, password)) {
             // Create user table if it doesn't exist
